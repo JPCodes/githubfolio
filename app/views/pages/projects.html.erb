@@ -1,11 +1,12 @@
+<div class="container">
 <h1>Projects</h1>
-
-<div class="row">
-<% @projects.first(20).each do |project| %>
-  <div class="col-md-4 project-box">
-    <p>Project Name: <%= link_to project['name'], project['html_url'] %></p>
-    <p>Short description: <%= project['description'] %></p>
-    <!-- <p><%# project['stargazers_count'] %></p> -->
+  <div class="row">
+    <% @projects.first(20).each do |project| %>
+    <div class="col-md-4 project-box">
+      <p>Project Name: <%= link_to project['name'], project['html_url'] %></p>
+      <p>Short description: <%= project['description'] %></p>
+      <!-- <p><%# project['stargazers_count'] %></p> -->
+    </div>
+    <% end %>
   </div>
-<% end %>
 </div>

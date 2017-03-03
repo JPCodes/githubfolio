@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rest-client'
 gem 'dotenv-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
