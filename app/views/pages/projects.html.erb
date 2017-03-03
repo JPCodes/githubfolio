@@ -1,7 +1,8 @@
 <h1>Projects</h1>
 
 <% @projects.first(20).each do |project| %>
-  <p><%= project['name'] %></p>
-  <p><%= project['description'] %></p>
-<hr>
+  <p>Project Name: <%= project['name'] %></p>
+  <p>Short description: <%= project['description'] %></p>
+  <p><%= project['stargazers_count'] %></p>
+  <hr>
 <% end %>
