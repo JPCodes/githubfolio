@@ -1,6 +1,6 @@
 # _Githubfolio (Jim Padilla Github Portfolio)_
 
-#### _Web portfolio. 03 March 2017_
+#### _Web Portfolio. 03 March 2017_
 
 #### By _**Jim Padilla**_
 
@@ -21,6 +21,7 @@ bundle install
 rake db:create
 rake db:migrate
 rake db:seed
+touch .env (GITHUB_TOKEN = "token <your token>")
 rails server
 ```
 * _Then, in any modern browser, navigate to:_
