@@ -10,8 +10,8 @@
 
   <body>
     <%= render 'layouts/navigation' %>
-    <%= notice %>
-    <%= alert %>
+    <%= content_tag(:div, notice, class: 'notice') if notice %>
+    <%= content_tag(:div, alert, class: 'alert') if alert %>
       <%= yield %>
     </div>
   </body>
